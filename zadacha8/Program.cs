@@ -13,7 +13,14 @@ if (num > 1)
 {
     while (count <= num)
     {
-        Console.Write(count + ", ");
+        if (count >= num - 1)
+        {
+            Console.Write(count + ". ");
+        }
+        else 
+        {
+            Console.Write(count + ", ");
+        }    
         count = count + 2;
     }
 }
